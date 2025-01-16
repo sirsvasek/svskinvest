@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #2C3E50;
+            background: linear-gradient(-45deg, #F5F5F5, #BDBDBD, #757575, #CCCCCC);
+            background-size: 400% 400%;
+            animation: gradientBG 20s ease infinite;
+            overflow: hidden;
+            transition: color 1s ease;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+                color: #2C3E50;
+            }
+            20% {
+                background-position: 100% 100%;
+                color: #34495E;
+            }
+            40% {
+                background-position: 50% 100%;
+                color: #7F8C8D;
+            }
+            60% {
+                background-position: 0% 0%;
+                color: #BDC3C7;
+            }
+            80% {
+                background-position: 100% 0%;
+                color: #BDC3C7;
+            }
+            100% {
+                background-position: 50% 50%;
+                color: #2C3E50;
+            }
+        }
+
+        .company-name {
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .divider {
+            width: 50px;
+            height: 2px;
+            background-color: #2C3E50;
+            margin: 1.5rem auto;
+        }
+
+        .email {
+            font-size: 1.2rem;
+            color: #34495E;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .email:hover {
+            color: #1ABC9C;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="company-name">SVSK Invest s.r.o.</h1>
+    <div class="divider"></div>
+    <a href="mailto:info@svskinvest.cz" class="email">info@svskinvest.cz</a>
+</body>
+</html>
